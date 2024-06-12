@@ -1,0 +1,32 @@
+{
+  "name": "js-module-tasks",
+  "version": "1.0.0",
+  "description": "Variant 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "task1": "nodemon [1]_use_strict/task_1.js",
+    "task2": "nodemon [2]_Variables/task_1.js",
+    "task3": "nodemon [3]_Data_Types/task_1.js",
+    "task4": "nodemon [4]_Arrays/task_1.js",
+    "task5": "nodemon [5]_Functions/task_1.js",
+    "task6": "nodemon [6]_Classes/task_1.js",
+    "task7": "nodemon [7]_Error_Handling/task_1.js",
+    "task8": "nodemon [8]_Promise/task_1.js",
+    "task9": "nodemon [9]_Async/task_1.js",
+    "task10": "nodemon [10]_Event_Loop/task_1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4ndreSha/JS-Module-Tasks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4ndreSha/JS-Module-Tasks/issues"
+  },
+  "homepage": "https://github.com/4ndreSha/JS-Module-Tasks#readme",
+  "dependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
