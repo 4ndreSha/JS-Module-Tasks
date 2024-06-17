@@ -2,22 +2,23 @@
 // функцию, основанную на callbacks, в
 // функцию, основанную на Promises.
 
-function greeting(name) {
-    console.log("Hello " + name);
+function greetings() {
+    console.log("Hello, this is my callback function!");
 }
 
-function callbackFunction(name, callback) {
-    return "Hello, this is my callback function! You`re " + name
-}
-
-let funcPromise = function(name) {
+let convertToPromise = function(callbackFunction) {
     return new Promise((resolve, reject) => {
-        callbackFunction(name, (err, data) => {
-            if (err)
-                reject(err)
-            else 
-                resolve(data);
-        });
-        resolve()
+        if(typeof(callbackFunction) === 'function') {
+            try {
+                resolve(callbackFunction())
+            } catch(err) {
+                reject(err);
+            }
+        }
+        else {
+            reject(new Error('Wrong parameter type'));
+        }
     })
 }
+//convertToPromise(123);
+convertToPromise(greetings);
