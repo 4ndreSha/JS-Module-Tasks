@@ -2,4 +2,4 @@
 
 <h3>Variant 4</h3>
 
-Using $${\color{lightgreen}Nodemon}$$ to quickly execute code in console.
+$${\color{white}Using \space \color{lightgreen}Nodemon \space \color{white}to quickly execute code in console.}$$
